@@ -2,12 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
-export default class Feed extends React.Component {
-
-  render() {
-
-    const username = this.props.navigation.getParam( 'username', 'No username provided' )
-
+export default function Feed({route}) {
+   const {username} = route.params
     return (
       <View style={styles.container}>
         <Text>Hello from feed page!</Text>
@@ -16,8 +12,6 @@ export default class Feed extends React.Component {
         </Text>
       </View>
     );
-  }
-
 }
 
 const styles = StyleSheet.create({

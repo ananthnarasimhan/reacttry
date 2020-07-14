@@ -16,6 +16,7 @@ export default function App() {
       <Navigator>
         <Screen name="Home" component={Home}></Screen>
         <Screen name="Profile" component={Profile}></Screen>
+        <Screen name="Feed" component={Feed}></Screen>
       </Navigator>
     </NavigationContainer>
   )
